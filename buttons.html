@@ -7,8 +7,26 @@
         width: 105px;
         border-radius: 4px;   
         cursor: pointer; 
-        margin-right: 8px;    
+        margin-right: 8px;  
+        transition: opacity 0.15s;  
     }
+    .subscribe-button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+        opacity: 0.5;
+    }
+
+    .join-button:hover {
+        background-color: rgb(41,118,211);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+        }
+
     .join-button {
     background-color: white;
     color: rgb(41,118,211);
@@ -20,6 +38,8 @@
     border-radius: 4px;
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color 0.15s
+    , color 0.15s;
     }
     .tweet-button {
     background-color: rgb(2,158,255);
@@ -33,6 +53,20 @@
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+    transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover {
+    /*
+    box shadow takes 4 values
+    1st is shadow to right (negative value is shadow to left)
+    2nd is shadow to bottom (negative value is shadow to top)
+    3rd is the blur
+    4th is shadow colour
+    in this case we use an rgba colour. the 'a' is for alpha
+    it determines the opacity of the colour, values are 0.1 to 1
+    */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
 
 </style>
