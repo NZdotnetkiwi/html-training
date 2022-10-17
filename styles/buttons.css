@@ -1,0 +1,81 @@
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-left: 20;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+    }
+
+    .subscribe-button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+        opacity: 0.5;
+    }
+
+    .join-button:hover {
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+    }
+
+    .join-button {
+        background-color: white;
+        color: rgb(41, 118, 211);
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: background-color 0.15s, color 0.15s;
+        vertical-align: top;
+    }
+
+    .tweet-button {
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border-color: rgb(41, 118, 211);
+        border: none;
+        border-width: 1px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+        vertical-align: top;
+    }
+
+    .tweet-button:hover {
+        /*
+    box shadow takes 4 values
+    1st is shadow to right (negative value is shadow to left)
+    2nd is shadow to bottom (negative value is shadow to top)
+    3rd is the blur
+    4th is shadow colour
+    in this case we use an rgba colour. the 'a' is for alpha
+    it determines the opacity of the colour, values are 0.1 to 1
+    */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
