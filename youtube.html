@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube.com Clone</title>
+    <style>
+        /* By default images do not take up the whole line
+            as it used the display type 'inline-block', but by changing
+            the display to be 'block' it will takes up the whole line
+            This forces other elements to move down */
+        .thumbnail {
+            width: 300px;
+            display: block
+        }
+
+        .search-bar {
+            font-size: 20px;
+            margin-left: 12px;
+            display: block;
+        }
+
+        .video-preview {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <div class="video-preview">
+        <img class="thumbnail" src="/thumbnails/thumbnail-1.webp">
+
+        <p>
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+
+            Marques Brownlee
+        </p>
+        <p class="video-stats">
+            3&#183;4M views &#183; 6 months ago
+        </p>
+    </div>
+        <div class="video-preview">
+            <img class="thumbnail" src="/thumbnails/thumbnail-2.webp">
+
+            <p>
+                Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+                Markiplier
+            </p>
+            <p class="video-stats">
+                19M views &#183; 4 years ago
+            </p>
+        </div>
+</body>
+
+</html>
