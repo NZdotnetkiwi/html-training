@@ -5,12 +5,30 @@
     top: 55px;
     background-color: white;
     width: 72px;
+    padding-top: 5px;
+    z-index: 300; /* sidebar is now in front of header bar */
 }
 
 .sidebar-link {
-    height: 76px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Causes the name to appear under the icon */
+    cursor: pointer; /* Mr Pointy Hand when over the sidebar */
 }
 
 .sidebar-link:hover {
     background-color: rgb(235, 235, 235)    ;
+}
+
+/* target images inside the sidebar-link class */
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+/* target divs inside the sidebar-link class */
+.sidebar-link div {
+    font-size: 10px;
 }
